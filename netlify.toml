@@ -1,0 +1,11 @@
+# Deploy this folder on its own:
+#   Netlify -> Add new site -> Import an existing project
+#   Base directory:    09-10-2026/netlify
+#   Publish directory: public
+#
+# Edge functions normally live in netlify/edge-functions. We keep the
+# session simple with one index.js at the top, so we point Netlify here.
+
+[build]
+  publish = "public"
+  edge_functions = "."
